@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>过往文章 · 入画寻章 — 李树楚</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles/gallery.css" />
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+      }
+    }
+  </script>
+</head>
+<body>
+  <!-- 顶部导航：左「返回」 + 右「版块导航」（与其他页面一致）-->
+  <header class="nav nav--solid">
+    <a href="index.html" class="nav__back">← 返回</a>
+    <nav class="nav__links">
+      <a href="about.html">作家介绍</a>
+      <a href="gallery.html" class="is-current">过往文章</a>
+      <a href="motto.html">座右铭</a>
+      <a href="contact.html">联系方式</a>
+    </nav>
+  </header>
+
+  <!-- 标题 + 沉浸式/列表 切换（位于导航下方）-->
+  <div class="g-subbar">
+    <div class="g-title">
+      <span class="g-title-row">
+        <span class="g-index">贰</span>
+        <span class="g-title-main">过往文章</span>
+      </span>
+      <span class="g-title-sub" id="g-subtitle">入画寻章 · 点击山水间的光点</span>
+    </div>
+    <div class="g-toggle" role="tablist" aria-label="浏览方式">
+      <button class="g-toggle__btn is-active" data-view="immersive" role="tab">沉浸式</button>
+      <button class="g-toggle__btn" data-view="list" role="tab">列表</button>
+    </div>
+  </div>
+
+  <!-- 画布区域（位于导航下方）-->
+  <div id="stagewrap">
+    <!-- 3D 画布 -->
+    <div id="stage"></div>
+
+    <!-- 锚点层（HTML 覆盖在 3D 之上）-->
+    <div id="anchors"></div>
+
+    <!-- 返回全景（聚焦某锚点后出现）-->
+    <button class="g-reset" id="g-reset" hidden>← 返回全景</button>
+
+    <!-- 操作提示 -->
+    <div class="g-hint" id="hint">
+      <span>拖动 · 旋转视角</span>
+      <span>滚轮 / 双指 · 缩放</span>
+      <span>右键 / 双指拖动 · 平移</span>
+      <span class="g-hint-strong">点击光点 · 阅读文章</span>
+    </div>
+
+    <!-- 列表视图 -->
+    <div class="listview" id="listview" hidden>
+      <div class="listview__inner">
+        <h1 class="listview__title">过往文章</h1>
+        <p class="listview__sub">按篇目与发表年月列出</p>
+        <ul class="listview__list" id="listview-list"></ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- 加载遮罩 -->
+  <div class="g-loading" id="loading">
+    <div class="g-loading-ink"></div>
+    <p>墨色未干，正在展卷……</p>
+  </div>
+
+  <script src="scripts/data.js"></script>
+  <script type="module" src="scripts/gallery.js"></script>
+</body>
+</html>

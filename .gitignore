@@ -1,0 +1,11 @@
+# Python 虚拟环境（深度图生成用，不需要进版本库）
+.venv/
+__pycache__/
+*.pyc
+
+# 系统文件
+.DS_Store
+
+# 根目录未使用的图片副本（站点实际用 assets/ 下的）
+/grandpa2.png
+/painting.png

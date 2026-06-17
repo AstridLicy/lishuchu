@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>李树楚 · 作家</title>
+  <meta name="description" content="作家李树楚个人网站 —— 作家介绍、过往文章、座右铭与联系方式" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body class="home-body">
+  <!-- 首页 hero：左图右栏（纯入口页）-->
+  <section class="hero" id="top">
+    <div class="hero__photo">
+      <div class="hero__photo-img" data-photo></div>
+      <div class="hero__photo-veil" aria-hidden="true"></div>
+    </div>
+    <div class="hero__panel">
+      <div class="hero__intro">
+        <p class="hero__eyebrow" data-title></p>
+        <h1 class="hero__name" data-name></h1>
+        <p class="hero__penname" data-penname></p>
+        <p class="hero__tagline" data-tagline></p>
+      </div>
+      <nav class="hero__menu">
+        <a class="hero__entry" href="about.html">
+          <span class="hero__entry-num">壹</span>
+          <span class="hero__entry-label">作家介绍</span>
+          <span class="hero__entry-en">About</span>
+        </a>
+        <a class="hero__entry hero__entry--feature" href="gallery.html">
+          <span class="hero__entry-num">贰</span>
+          <span class="hero__entry-label">过往文章</span>
+          <span class="hero__entry-en">Works · 入画探索</span>
+        </a>
+        <a class="hero__entry" href="motto.html">
+          <span class="hero__entry-num">叁</span>
+          <span class="hero__entry-label">座右铭</span>
+          <span class="hero__entry-en">Motto</span>
+        </a>
+        <a class="hero__entry" href="contact.html">
+          <span class="hero__entry-num">肆</span>
+          <span class="hero__entry-label">联系方式</span>
+          <span class="hero__entry-en">Contact</span>
+        </a>
+      </nav>
+    </div>
+  </section>
+
+  <script src="scripts/data.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
+</html>
