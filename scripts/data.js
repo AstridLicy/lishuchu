@@ -12,6 +12,7 @@ const SITE = {
     penName: "",                              // 暂无（原占位“号 听雨斋主人”已删）
     tagline: "热爱生活，慢积薄发",            // 取自爷爷自述，可改
     photo: "assets/portrait/grandpa2.png",   // hero 主图：爷爷写作照
+    portrait: "assets/portrait/grandpa2_1.png?v=2", // 作家介绍版块头像（爷爷真实照片）
   },
   about: {
     intro: "李树楚，男；1956年生，江苏兴化人。",

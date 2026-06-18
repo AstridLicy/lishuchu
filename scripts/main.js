@@ -18,6 +18,12 @@
   const photo = $("[data-photo]");
   if (photo && a.photo) photo.style.backgroundImage = `url("${a.photo}")`;
 
+  /* —— 作家介绍头像（无 portrait 时回退到 photo）—— */
+  const portrait = $("[data-portrait]");
+  const portraitSrc = a.portrait || a.photo;
+  if (portrait && portraitSrc)
+    portrait.style.backgroundImage = `url("${portraitSrc}")`;
+
   /* —— 一、作家介绍 —— */
   setText("[data-about-intro]", SITE.about.intro);
   const paras = $("[data-about-paragraphs]");
