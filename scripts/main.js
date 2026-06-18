@@ -64,14 +64,22 @@
 
   /* —— 四、联系方式 —— */
   setText("[data-contact-note]", SITE.contact.note);
-  const emailEl = $("[data-contact-email]");
-  if (emailEl) {
-    if (SITE.contact.email) {
-      emailEl.textContent = SITE.contact.email;
-      emailEl.setAttribute("href", "mailto:" + SITE.contact.email);
-    } else {
-      emailEl.style.display = "none";
-    }
+  const contactList = $("[data-contact-list]");
+  if (contactList) {
+    const c = SITE.contact;
+    const rows = [];
+    if (c.phone) rows.push({ label: "手机", value: c.phone, href: "tel:" + c.phone });
+    if (c.wechat) rows.push({ label: "微信", value: c.wechat });
+    if (c.email) rows.push({ label: "邮箱", value: c.email, href: "mailto:" + c.email });
+    if (c.address) rows.push({ label: "地址", value: c.address });
+    contactList.innerHTML = rows
+      .map((r) => {
+        const val = r.href
+          ? `<a class="contact__value" href="${r.href}">${esc(r.value)}</a>`
+          : `<span class="contact__value">${esc(r.value)}</span>`;
+        return `<li class="contact__item"><span class="contact__label">${esc(r.label)}</span>${val}</li>`;
+      })
+      .join("");
   }
 
   const yr = $("#year");

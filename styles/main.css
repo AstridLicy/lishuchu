@@ -319,6 +319,43 @@ a { color: inherit; text-decoration: none; }
 }
 .contact__email:hover { opacity: 0.7; }
 
+/* 联系信息列表 */
+.contact__list {
+  list-style: none;
+  margin: 2rem auto 0;
+  max-width: 460px;
+  text-align: left;
+}
+.contact__item {
+  display: flex;
+  align-items: baseline;
+  gap: 1.2rem;
+  padding: 1rem 0.2rem;
+  border-bottom: 1px solid var(--line);
+}
+.contact__item:first-child { border-top: 1px solid var(--line); }
+.contact__label {
+  flex: none;
+  width: 3.2rem;
+  font-size: 0.95rem;
+  letter-spacing: 0.18em;
+  color: var(--seal);
+}
+.contact__value {
+  flex: 1;
+  font-size: 1.15rem;
+  color: var(--ink);
+  letter-spacing: 0.04em;
+  line-height: 1.7;
+  word-break: break-word;
+}
+a.contact__value {
+  color: var(--ink);
+  border-bottom: 1px solid transparent;
+  transition: color 0.3s var(--ease), border-color 0.3s var(--ease);
+}
+a.contact__value:hover { color: var(--seal); border-color: var(--seal); }
+
 /* ---------- 页脚 ---------- */
 .footer {
   text-align: center; padding: 3rem 1.5rem;
