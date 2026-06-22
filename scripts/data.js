@@ -131,7 +131,7 @@ const SITE = {
     {
       id: "diyige-jushou",
       spot: "课堂红旗",
-      anchor: { x: 0.55, y: 0.7 },
+      anchor: { x: 0.65, y: 0.32 },
       title: "第一个举手",
       meta: "2026.5.13 · 《江都日报》",
       excerpt: "“我爷爷会讲！”——孙子第一个举起了手。",
@@ -158,7 +158,7 @@ const SITE = {
     {
       id: "ningxin-zhenxing",
       spot: "乡村门楼",
-      anchor: { x: 0.65, y: 0.32 },
+      anchor: { x: 0.55, y: 0.7 },
       title: "凝心聚力闹振兴，村貌乡魂筑新篇",
       meta: "2026.4.19 · 《交汇点新闻》",
       excerpt: "巍峨门楼熠熠生辉，村民众力筑乡村新景。",

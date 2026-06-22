@@ -16,10 +16,10 @@ const PLANE_W = 16;                       // 画平面宽度（世界单位）
 const ASPECT_IMG = 941 / 1672;            // 画作高/宽
 const PLANE_H = PLANE_W * ASPECT_IMG;
 const SEG_X = 320, SEG_Y = 180;           // 网格细分（越高越细腻）
-const DISPLACE = 3.0;                      // 立体起伏强度
+const DISPLACE = 2.5;                      // 立体起伏强度（略降，减小孤立物体被拉成的尖壁）
 const SEG_DIST = { min: 3, max: 24 };      // 缩放范围（min 越小可凑得越近看细节）
-const NORMAL_STRENGTH = 2.2;               // 由深度图生成法线的强度（决定明暗立体感）
-const DEPTH_BLUR = 5;                       // 深度图平滑半径（越大越柔；避免细树/人物变尖刺黑线）
+const NORMAL_STRENGTH = 2.6;               // 由深度图生成法线的强度（立体感主要靠它，转视角不会线条化）
+const DEPTH_BLUR = 11;                      // 深度图平滑半径（越大越柔；避免人物/桃花等小物体转视角时线条化）
 const FOCUS_DIST = 6;                      // 点击锚点后聚焦的镜头距离
 const OVERVIEW_DIST = 15.5;                // 全景镜头距离
 
