@@ -307,25 +307,19 @@ a { color: inherit; text-decoration: none; }
   font-size: 3.6rem; color: var(--seal); opacity: 0.5; font-family: var(--serif-la);
 }
 
-/* 座右铭（作家介绍下方） */
-.about__motto {
-  max-width: 760px;
-  margin: clamp(2.4rem, 5vw, 3.6rem) 0 0;
-  padding-top: 1.8rem;
-  border-top: 1px solid var(--line);
-  font-size: clamp(1.3rem, 2.6vw, 1.7rem);
-  line-height: 1.95;
-  font-weight: 300;
-  letter-spacing: 0.12em;
+/* 座右铭（紧接作家介绍正文之后） */
+.about__motto-label {
+  margin-top: 1.8rem;
+  font-size: 1.3rem;          /* 与 .about__intro 同字号 */
+  font-weight: 500;
+  letter-spacing: 0.08em;
   color: var(--ink);
 }
-.about__motto::before {
-  content: "座右铭";
-  display: block;
-  font-size: 0.82rem;
-  letter-spacing: 0.34em;
-  color: var(--seal);
-  margin-bottom: 0.9rem;
+.about__motto-text {
+  margin-top: 0.6rem;
+  max-width: 760px;
+  color: var(--ink-soft);
+  line-height: 1.9;
 }
 
 /* 曾获奖项 */
