@@ -43,7 +43,7 @@
 - 深度图：亮=近、暗=远。重新生成：
   ```bash
   source .venv/bin/activate
-  python tools/gen_depth.py assets/painting/painting.png assets/depth/painting_depth.png
+  python tools/gen_depth.py assets/painting/painting2.png assets/depth/painting2_depth.png
   ```
 - `gallery.css` 不引用 main.css，需自带 `a{color:inherit;text-decoration:none}` 等基础重置。
 

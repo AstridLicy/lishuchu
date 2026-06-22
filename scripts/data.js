@@ -48,14 +48,14 @@ const SITE = {
      用户点击画中该位置 → 浮出标题 → 点击跳转全文。
      ============================================================ */
   painting: {
-    image: "assets/painting/painting.png",
-    depth: "assets/depth/painting_depth.png",
+    image: "assets/painting/painting2.png",
+    depth: "assets/depth/painting2_depth.png",
   },
   articles: [
     {
       id: "yuedu-sanzhongzou",
       spot: "书斋夜读",
-      anchor: { x: 0.5, y: 0.3 },
+      anchor: { x: 0.87, y: 0.35 },
       title: "阅读“三重奏”",
       meta: "2026.6.3 · 泰州文联新众文艺公众号",
       excerpt: "把书“吃”进去，把陈见“吐”出来。",
@@ -81,7 +81,7 @@ const SITE = {
     {
       id: "gesheng-mengyi",
       spot: "庭院灯会",
-      anchor: { x: 0.78, y: 0.62 },
+      anchor: { x: 0.8, y: 0.64 },
       title: "歌声与梦呓的最美交响曲",
       meta: "2026.5.28 · 大耳郎公众号",
       excerpt: "荧光闪烁，歌舞共融，童年在歌声里绽放。",
@@ -104,7 +104,7 @@ const SITE = {
     {
       id: "taohua-luo",
       spot: "桃花寒海",
-      anchor: { x: 0.12, y: 0.55 },
+      anchor: { x: 0.08, y: 0.49 },
       title: "桃花落，海水寒，魂安在",
       meta: "2026.5.22 · 三江之声卢笙公众号",
       excerpt: "桃花落尽，海水寒凉，花季的魂魄归向何方？",
@@ -131,7 +131,7 @@ const SITE = {
     {
       id: "diyige-jushou",
       spot: "课堂红旗",
-      anchor: { x: 0.63, y: 0.8 },
+      anchor: { x: 0.55, y: 0.7 },
       title: "第一个举手",
       meta: "2026.5.13 · 《江都日报》",
       excerpt: "“我爷爷会讲！”——孙子第一个举起了手。",
@@ -158,7 +158,7 @@ const SITE = {
     {
       id: "ningxin-zhenxing",
       spot: "乡村门楼",
-      anchor: { x: 0.87, y: 0.43 },
+      anchor: { x: 0.65, y: 0.32 },
       title: "凝心聚力闹振兴，村貌乡魂筑新篇",
       meta: "2026.4.19 · 《交汇点新闻》",
       excerpt: "巍峨门楼熠熠生辉，村民众力筑乡村新景。",
@@ -182,7 +182,7 @@ const SITE = {
     {
       id: "ziwo-faming",
       spot: "春野著文",
-      anchor: { x: 0.3, y: 0.74 },
+      anchor: { x: 0.19, y: 0.78 },
       title: "“自我发明”，方臻“独一无二”",
       meta: "2026.4.10 · 《当代文学研究》",
       excerpt: "写作是对自我的发明，独一无二，方能动人。",
@@ -205,7 +205,7 @@ const SITE = {
     {
       id: "jisao-lieshimu",
       spot: "白色丰碑",
-      anchor: { x: 0.42, y: 0.18 },
+      anchor: { x: 0.31, y: 0.13 },
       title: "祭扫烈士墓，传承红基因",
       meta: "2026.4.1 · 大耳郎公众号",
       excerpt: "白色丰碑下，童心铭记历史，红色基因相传。",
@@ -225,7 +225,7 @@ const SITE = {
     {
       id: "feiyi-shuiche",
       spot: "水车非遗",
-      anchor: { x: 0.2, y: 0.4 },
+      anchor: { x: 0.38, y: 0.46 },
       title: "永远转动的“非遗”",
       meta: "2026.3.7 · 《泰州晚报·坡子街文学》",
       excerpt: "风车在转，澈水哗哗，古农具里藏着农耕岁月。",
