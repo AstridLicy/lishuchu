@@ -51,14 +51,17 @@
     });
   }
 
-  /* —— 三、座右铭 —— */
-  const ml = $("[data-mottos]");
-  if (ml) {
-    (SITE.mottos || []).forEach((q) => {
-      const div = document.createElement("blockquote");
-      div.className = "motto reveal";
-      div.textContent = q;
-      ml.appendChild(div);
+  /* —— 座右铭（作家介绍下方）—— */
+  setText("[data-about-motto]", SITE.motto);
+
+  /* —— 曾获奖项 —— */
+  const al = $("[data-awards]");
+  if (al) {
+    (SITE.awards || []).forEach((q) => {
+      const li = document.createElement("li");
+      li.className = "award reveal";
+      li.textContent = q;
+      al.appendChild(li);
     });
   }
 

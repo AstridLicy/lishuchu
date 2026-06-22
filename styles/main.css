@@ -307,6 +307,46 @@ a { color: inherit; text-decoration: none; }
   font-size: 3.6rem; color: var(--seal); opacity: 0.5; font-family: var(--serif-la);
 }
 
+/* 座右铭（作家介绍下方） */
+.about__motto {
+  max-width: 760px;
+  margin: clamp(2.4rem, 5vw, 3.6rem) 0 0;
+  padding-top: 1.8rem;
+  border-top: 1px solid var(--line);
+  font-size: clamp(1.3rem, 2.6vw, 1.7rem);
+  line-height: 1.95;
+  font-weight: 300;
+  letter-spacing: 0.12em;
+  color: var(--ink);
+}
+.about__motto::before {
+  content: "座右铭";
+  display: block;
+  font-size: 0.82rem;
+  letter-spacing: 0.34em;
+  color: var(--seal);
+  margin-bottom: 0.9rem;
+}
+
+/* 曾获奖项 */
+.awards__list { list-style: none; max-width: 720px; }
+.award {
+  position: relative;
+  padding: 1.1rem 0 1.1rem 2.1rem;
+  border-bottom: 1px solid var(--line);
+  font-size: clamp(1.05rem, 2.2vw, 1.3rem);
+  line-height: 1.7;
+  letter-spacing: 0.06em;
+  color: var(--ink);
+}
+.award:first-child { border-top: 1px solid var(--line); }
+.award::before {
+  content: "✦";
+  position: absolute; left: 0; top: 1.15rem;
+  color: var(--gold);
+  font-size: 1rem;
+}
+
 /* ---------- 联系方式 ---------- */
 .contact { text-align: center; }
 .contact__inner { max-width: 560px; margin: 0 auto; }
